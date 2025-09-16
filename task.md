@@ -34,10 +34,16 @@
 22. 支払完了時に Webhook 呼び出し
 23. ローカルで curl で API 確認
 
+--done(9/16:20:22)
+
 ## チェーン監視 Worker
 
 24. `worker.ts` 作成
 25. viem で Polygon RPC に接続
+
+--done(9/16:21:00)
+25-1. worker をたて、自身の polygon ウォレットから自分に送金できるかテスト(worker= 監視),(npm run dev のサーバー=ノードと接続)
+
 26. JPYC コントラクト ABI 読み込み
 27. Transfer イベント購読
 28. `to == merchant.jpycAddress && value == amountJpyc` 判定

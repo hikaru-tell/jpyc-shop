@@ -4,16 +4,26 @@
   "description": "## 技術スタック",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/api/index.ts",
+    "worker": "tsx src/worker/worker.ts",
+    "ping": "tsx src/scripts/ping.ts",
+    "seed": "tsx src/scripts/seed.ts",
+    "token": "tsx src/scripts/tokenCheck.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src/**/*.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^24.5.0",
     "prisma": "^6.16.1",
+    "tsx": "^4.19.3",
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@hono/node-server": "^1.19.3",
     "@jpyc/sdk-core": "^1.5.1",
     "@prisma/client": "^6.16.1",
     "@walletconnect/ethereum-provider": "^2.21.8",
@@ -21,5 +31,8 @@
     "dotenv": "^17.2.2",
     "hono": "^4.9.7",
     "viem": "^2.37.6"
+  },
+  "prisma": {
+    "seed": "tsx src/seed.ts"
   }
 }
