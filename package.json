@@ -7,5 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.5.0",
+    "prisma": "^6.16.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@jpyc/sdk-core": "^1.5.1",
+    "@prisma/client": "^6.16.1",
+    "@walletconnect/ethereum-provider": "^2.21.8",
+    "@web3modal/html": "^2.7.1",
+    "dotenv": "^17.2.2",
+    "hono": "^4.9.7",
+    "viem": "^2.37.6"
+  }
 }

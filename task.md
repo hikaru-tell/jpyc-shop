@@ -13,6 +13,8 @@
 9. Prisma / @prisma/client インストール
 10. .env に `DATABASE_URL`, `RPC_URL`, `WEBHOOK_SECRET` 設定
 
+--done(9/16:19:39)
+
 ## DB / Prisma
 
 11. Prisma 初期化 `npx prisma init`
